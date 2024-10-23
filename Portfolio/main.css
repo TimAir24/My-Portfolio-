@@ -1,0 +1,341 @@
+body {
+    background-color: #d8c7a8;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* mobile first styling*/
+
+/* Nav bar styling*/
+.vertical-menu {
+    width: 100%;
+    /* Set a width if you like */
+}
+
+.vertical-menu {
+    position: fixed;
+    background-color: #464949;
+}
+
+.vertical-menu a {
+    color: rgb(255, 255, 255);
+    /* Black text color */
+    display: block;
+    /* Make the links appear below each other */
+    padding: 12px;
+    /* Add some padding */
+    text-decoration: none;
+    /* Remove underline from links */
+    text-align: center;
+
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+    /* Dark grey background on mouse-over */
+}
+
+/* end of nav bar styling */
+
+/* hero section styling*/
+/*#hero_section {
+    padding-top: 300px;
+    background-image: url("Images/ui-771829_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}*/
+
+#hero_section {
+    width: 100%;
+    height: 225px;
+    padding-top: 300px;
+    background-color: rgb(215, 164, 98);
+
+}
+
+#hero_section h1,
+h2 {
+    text-align: center;
+
+}
+
+#hero_section h2 {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    padding-bottom: 100px;
+    color: white;
+}
+
+#hero_section h1 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 250%;
+}
+
+/* end of hero section styling*/
+
+/* about_section class styling*/
+.about_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 360px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 15px 0 15px;
+}
+
+.about_section p {
+    width: 360px;
+}
+
+.about_section button {
+    width: 100px;
+    border: none;
+    padding: 10px;
+}
+
+.about_section img {
+    width: 400px;
+}
+
+/* end of about_section class styling*/
+
+/* project main section grid styling*/
+
+#Column_grid {
+    display: grid;
+    justify-content: center;
+}
+
+#Column_grid p {
+    width: 360px;
+}
+
+#Column_grid div {
+    padding-bottom: 50px;
+}
+
+#Column_grid img {
+    width: 360px;
+    height: 225px;
+}
+
+#Column_grid button {
+    background-color: rgb(13, 162, 255);
+    border: none;
+    padding: 10px;
+    margin-left: 10em;
+    color: white;
+}
+
+/*footer section styling*/
+footer {
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    position: absolute;
+    background-color: #464949;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+footer div {
+    padding: 25px;
+}
+
+footer div img {
+    padding-left: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    /* Nav bar styling*/
+    .vertical-menu {
+        padding-top: 50px;
+        width: 100%;
+        height: 100px;
+        /* Set a width if you like */
+    }
+
+    .vertical-menu {
+        position: fixed;
+        background-color: #464949;
+    }
+
+    .vertical-menu a {
+        margin-right: 50px;
+        float: right;
+        color: rgb(255, 255, 255);
+        /* Black text color */
+        display: inline;
+        /* Make the links appear below each other */
+        padding: 12px;
+        /* Add some padding */
+        text-decoration: none;
+        /* Remove underline from links */
+        text-align: center;
+    }
+
+    .vertical-menu a:hover {
+        background-color: #ccc;
+        /* Dark grey background on mouse-over */
+    }
+
+    /* end of nav bar styling */
+    #Column_grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    #hero_section {
+        width: 100%;
+        height: 400px;
+        padding-top: 200px;
+        background-color: rgb(215, 164, 98);
+
+    }
+
+    #hero_section h1,
+    h2 {
+        text-align: center;
+
+    }
+
+    #hero_section h2 {
+        padding-bottom: 100px;
+        color: white;
+    }
+
+    #hero_section h1 {
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 500%;
+    }
+
+
+    /*
+    .about_section {
+        flex-direction: row;
+        align-items: center;
+        width: 600px;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        margin: 20%;
+    }*/
+
+    .about_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 360px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 50px 0 100px 32%;
+        align-items: center;
+    }
+
+    .about_section img {
+        width: 600px;
+    }
+
+    .about_section button {
+        border: none;
+        padding: 10px;
+    }
+
+    .about_section p {
+        font-size: 150%;
+    }
+
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    /* Nav bar styling*/
+    .vertical-menu {
+        padding-top: 50px;
+        width: 100%;
+        height: 100px;
+        /* Set a width if you like */
+    }
+
+    .vertical-menu {
+        position: fixed;
+        background-color: #464949;
+    }
+
+    .vertical-menu a {
+        margin-right: 50px;
+        float: right;
+        color: rgb(255, 255, 255);
+        /* Black text color */
+        display: inline;
+        /* Make the links appear below each other */
+        padding: 12px;
+        /* Add some padding */
+        text-decoration: none;
+        /* Remove underline from links */
+        text-align: center;
+    }
+
+    .vertical-menu a:hover {
+        background-color: #ccc;
+        /* Dark grey background on mouse-over */
+    }
+
+    /* end of nav bar styling */
+
+    #hero_section h2 {
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-style: italic;
+        font-size: 200%;
+    }
+
+    #Column_grid {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .about_section {
+        flex-direction: row;
+        align-items: center;
+        width: 600px;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        margin: 50px 0 100px 35%;
+    }
+
+    .about_section p {
+        padding-left: 50px;
+        font-size: 150%;
+    }
+
+    .about_section img {
+        width: 600px;
+        height: 400px;
+    }
+
+    .about_section button {
+        border: none;
+        padding: 10px;
+        margin-left: 50px;
+    }
+
+    .about_section img {
+        width: auto;
+    }
+
+
+}
