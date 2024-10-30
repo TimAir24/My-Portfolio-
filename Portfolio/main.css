@@ -5,35 +5,41 @@ body {
     height: 100%;
 }
 
-/* mobile first styling*/
+/* BREAK INTO VERTICAL MENU */
 
-/* Nav bar styling*/
 .vertical-menu {
     width: 100%;
-    /* Set a width if you like */
-}
-
-.vertical-menu {
-    position: fixed;
     background-color: #464949;
+    position: fixed;
 }
 
-.vertical-menu a {
-    color: rgb(255, 255, 255);
-    /* Black text color */
+#hamitems a {
+    box-sizing: border-box;
     display: block;
-    /* Make the links appear below each other */
-    padding: 12px;
-    /* Add some padding */
+    width: 100%;
+    border-top: 1px solid #333;
     text-decoration: none;
-    /* Remove underline from links */
-    text-align: center;
-
+    color: white;
+    padding: 10px;
 }
 
-.vertical-menu a:hover {
-    background-color: #ccc;
-    /* Dark grey background on mouse-over */
+/* SHOW HAMBURGER ICON */
+.vertical-menu label {
+    display: inline-block;
+    color: white;
+    background: #464949;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+/* TOGGLE SHOW/HIDE MENU */
+#hamitems {
+    display: none;
+}
+
+.vertical-menu input:checked~#hamitems {
+    display: block;
 }
 
 /* end of nav bar styling */
@@ -78,7 +84,7 @@ h2 {
 /* end of hero section styling*/
 
 /* about_section class styling*/
-.about_section {
+#about_section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,17 +94,17 @@ h2 {
     margin: 0 15px 0 15px;
 }
 
-.about_section p {
+#about_section p {
     width: 360px;
 }
 
-.about_section button {
+#about_section button {
     width: 100px;
     border: none;
     padding: 10px;
 }
 
-.about_section img {
+#about_section img {
     width: 400px;
 }
 
@@ -156,36 +162,37 @@ footer div img {
 
 @media screen and (min-width: 1024px) {
 
-    /* Nav bar styling*/
+
+    /* HORIZONTAL MENU ITEMS */
     .vertical-menu {
-        padding-top: 50px;
         width: 100%;
-        height: 100px;
-        /* Set a width if you like */
-    }
-
-    .vertical-menu {
-        position: fixed;
         background-color: #464949;
+        position: fixed;
     }
 
-    .vertical-menu a {
-        margin-right: 50px;
+    #hamitems {
+        display: flex;
         float: right;
-        color: rgb(255, 255, 255);
-        /* Black text color */
-        display: inline;
-        /* Make the links appear below each other */
-        padding: 12px;
-        /* Add some padding */
-        text-decoration: none;
-        /* Remove underline from links */
-        text-align: center;
+        flex-direction: row-reverse;
+        margin: 50px 50px 50px 0;
     }
 
-    .vertical-menu a:hover {
-        background-color: #ccc;
-        /* Dark grey background on mouse-over */
+    #hamitems a {
+        padding: 10px 20px 10px 20px;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        font-size: 125%;
+    }
+
+    #hamitems a:hover {
+        background: #292927;
+    }
+
+    /* HIDE HAMBURGER */
+    .vertical-menu label,
+    #hamburger {
+        display: none;
     }
 
     /* end of nav bar styling */
@@ -232,7 +239,7 @@ footer div img {
         margin: 20%;
     }*/
 
-    .about_section {
+    #about_section {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -243,16 +250,16 @@ footer div img {
         align-items: center;
     }
 
-    .about_section img {
+    #about_section img {
         width: 600px;
     }
 
-    .about_section button {
+    #about_section button {
         border: none;
         padding: 10px;
     }
 
-    .about_section p {
+    #about_section p {
         font-size: 150%;
     }
 
@@ -260,40 +267,6 @@ footer div img {
 }
 
 @media screen and (min-width: 1280px) {
-
-    /* Nav bar styling*/
-    .vertical-menu {
-        padding-top: 50px;
-        width: 100%;
-        height: 100px;
-        /* Set a width if you like */
-    }
-
-    .vertical-menu {
-        position: fixed;
-        background-color: #464949;
-    }
-
-    .vertical-menu a {
-        margin-right: 50px;
-        float: right;
-        color: rgb(255, 255, 255);
-        /* Black text color */
-        display: inline;
-        /* Make the links appear below each other */
-        padding: 12px;
-        /* Add some padding */
-        text-decoration: none;
-        /* Remove underline from links */
-        text-align: center;
-    }
-
-    .vertical-menu a:hover {
-        background-color: #ccc;
-        /* Dark grey background on mouse-over */
-    }
-
-    /* end of nav bar styling */
 
     #hero_section h2 {
         font-family: 'Arial Narrow', Arial, sans-serif;
@@ -308,7 +281,7 @@ footer div img {
         gap: 100px;
     }
 
-    .about_section {
+    #about_section {
         flex-direction: row;
         align-items: center;
         width: 600px;
@@ -317,23 +290,23 @@ footer div img {
         margin: 50px 0 100px 35%;
     }
 
-    .about_section p {
+    #about_section p {
         padding-left: 50px;
         font-size: 150%;
     }
 
-    .about_section img {
+    #about_section img {
         width: 600px;
         height: 400px;
     }
 
-    .about_section button {
+    #about_section button {
         border: none;
         padding: 10px;
         margin-left: 50px;
     }
 
-    .about_section img {
+    #about_section img {
         width: auto;
     }
 

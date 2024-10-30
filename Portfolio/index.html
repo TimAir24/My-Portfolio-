@@ -10,17 +10,21 @@
 
 <body>
     <div class="vertical-menu">
-        <a href="#" class="active">Services</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
-        <a href="#">About</a>
-        <a href="#">Home</a>
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger" />
+        <div id="hamitems">
+            <a href="#Column_grid">Services</a>
+            <a href="#Column_grid">Projects</a>
+            <a href="#social_media">Contact</a>
+            <a href="#about_section">About</a>
+            <a href="index.html">Home</a>
+        </div>
     </div>
     <section id="hero_section">
         <h1>Timothy Nyanga</h1>
         <h2>Welcome to my portfolio.</h2>
     </section>
-    <div class="about_section">
+    <div id="about_section">
         <div>
             <img src="Images/DSC_0174.jpg" alt="Project">
         </div>
@@ -91,7 +95,7 @@
     </main>
 
     <footer>
-        <div><img src="Images/Facebook_Logo_Primary.png" alt="Facebook account">
+        <div id="social_media"><img src="Images/Facebook_Logo_Primary.png" alt="Facebook account">
             <img src="Images/Instagram_Glyph_Gradient.png" alt="instagram account">
             <img src="Images/logo-white.png" alt="X account">
         </div>
